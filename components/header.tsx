@@ -13,8 +13,8 @@ export function Header() {
             <Image
               src="/icon.png"
               alt="Rampage Trainer"
-              width={28}
-              height={28}
+              width={48}
+              height={48}
               className="opacity-90"
             />
             <span className="font-semibold tracking-tight">Rampage Trainer</span>

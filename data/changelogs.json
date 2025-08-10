@@ -1,0 +1,26 @@
+{
+  "1.0.1491.50": [
+    "Added Door Manager",
+    "Added Horse Side Saddle Riding",
+    "Added Submenu for Facial Expressions",
+    "Added Damage Packs and Walk Styles to Ped Editor",
+    "Added Option to Give Custom Weapons to Peds",
+    "Added More Speech Options (Regular, Flow Greets, Vignettes)",
+    "Added Bleed Out Gun",
+    "Added Option to Spawn Peds with Random Outfits",
+    "Added Option to Spawn Peds as Invincible",
+    "Overhauled Wardrobe System with Support for SP, MP, and Female Clothing",
+    "Re-implemented the Old Method of Using Animation Flags",
+    "Ped Scenarios Are Now Saved in Map Saver",
+    "Ped Outfits and MetaTags Are Now Fully Saved",
+    "Fixed Object Spawner Database Operations",
+    "Fixed Typo in Aimbot Targeting",
+    "Fixed Swapped Pitch and Roll in Object Info",
+    "Ghost Mode Now Persists After Toggling Creator Camera",
+    "More Toggle Options Are Now Savable",
+    "Internal Improvements for Better Stability",
+    "Various Bug Fixes"
+  ]
+}
+
+

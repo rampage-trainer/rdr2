@@ -50,13 +50,6 @@ export default function Home() {
                 </div>
                 <Badge className="bg-emerald-600 hover:bg-emerald-600">Runs</Badge>
               </div>
-              <div className="flex items-center justify-between">
-                <div className="space-y-1">
-                  <div className="font-medium">RDR2</div>
-                  <div className="text-muted-foreground">Build 1.0.1600.0</div>
-                </div>
-                <Badge className="bg-amber-500 hover:bg-amber-500 text-black">Testing</Badge>
-              </div>
             </div>
           </CardContent>
           </Card>
@@ -69,7 +62,7 @@ export default function Home() {
                 href="https://raw.githubusercontent.com/rampage-trainer/rdr2/main/builds/Rampage_1.0.1491.50.zip"
                 className="inline-flex items-center gap-2 rounded-md bg-primary text-primary-foreground px-4 py-2 text-sm font-medium hover:bg-primary/90"
               >
-                <Download className="size-4" /> Download Latest
+                <Download className="size-4" /> Download Beta
               </Link>
               <Link
                 href="#install"

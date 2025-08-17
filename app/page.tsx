@@ -48,7 +48,7 @@ export default function Home() {
                   <div className="font-medium">RDR2</div>
                   <div className="text-muted-foreground">Build 1.0.1491.50</div>
                 </div>
-                <Badge className="bg-emerald-600 hover:bg-emerald-600">Runs</Badge>
+                <Badge className="bg-emerald-600 hover:bg-emerald-600">Supported</Badge>
               </div>
             </div>
           </CardContent>

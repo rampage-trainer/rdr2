@@ -59,7 +59,13 @@ export default function Home() {
             </p>
             <div className="flex flex-wrap gap-3">
               <Link
-                href="https://raw.githubusercontent.com/rampage-trainer/rdr2/main/build/Rampage_1.0.1491.50.zip"
+                href="https://github.com/rampage-trainer/rdr2/releases/latest/download/Rampage.zip"
+                className="inline-flex items-center gap-2 rounded-md bg-primary text-primary-foreground px-4 py-2 text-sm font-medium hover:bg-primary/90"
+              >
+                <Download className="size-4" /> Download Stable
+              </Link>
+              <Link
+                href=""
                 className="inline-flex items-center gap-2 rounded-md bg-primary text-primary-foreground px-4 py-2 text-sm font-medium hover:bg-primary/90"
               >
                 <Download className="size-4" /> Download Beta

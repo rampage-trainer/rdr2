@@ -1,10 +1,10 @@
 import Link from "next/link"
-import Image from "next/image"
-import { ArrowDownToLine, Download, ShieldCheck } from "lucide-react"
+import { Wrench, Download, ShieldCheck } from "lucide-react"
 import changelogs from "@/data/changelogs.json"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Separator } from "@/components/ui/separator"
 import { Badge } from "@/components/ui/badge"
+import { ImageCarousel } from "@/components/image-carousel"
 
 type ChangelogsMap = Record<string, string[]>
 
@@ -18,17 +18,26 @@ function loadLatestChangelogItems(): string[] {
 
 export default function Home() {
   const changelogItems = loadLatestChangelogItems()
+
+  const trainerImages = [
+    {
+      src: "/trainer.png",
+      alt: "Rampage Trainer logo"
+    },
+    {
+      src: "/trainer_nui.png",
+      alt: "Rampage Trainer NUI logo"
+    }
+  ]
+
   return (
     <main className="mx-auto max-w-6xl px-4 sm:px-6 py-10">
       <section className="grid gap-10 md:grid-cols-2 md:gap-14 items-start">
         <div className="space-y-6">
           <div className="pt-2">
-            <Image
-              src="/trainer.png"
-              alt="Rampage Trainer logo"
-              width={520}
-              height={520}
-              className="opacity-90 w-[360px] h-auto sm:w-[440px] md:w-[420px] rounded-[6px]"
+            <ImageCarousel
+              images={trainerImages}
+              className="opacity-90"
               priority
             />
           </div>
@@ -71,10 +80,16 @@ export default function Home() {
                 <Download className="size-4" /> Download Beta
               </Link>
               <Link
+                href="https://github.com/rampage-trainer/rdr2/releases/latest/download/RampageNUI.zip"
+                className="inline-flex items-center gap-2 rounded-md bg-primary text-primary-foreground px-4 py-2 text-sm font-medium hover:bg-primary/90"
+              >
+                <Download className="size-4" /> Download NUI
+              </Link>
+              <Link
                 href="#install"
                 className="inline-flex items-center gap-2 rounded-md border px-4 py-2 text-sm hover:bg-accent hover:text-accent-foreground"
               >
-                <ArrowDownToLine className="size-4" /> Install Guide
+                <Wrench className="size-4" /> Install Guide
               </Link>
             </div>
           </div>
@@ -87,6 +102,7 @@ export default function Home() {
         <div id="install" className="grid gap-6 max-w-prose w-full">
           <h2 className="text-xl font-semibold tracking-tight">Install Instructions</h2>
           <ol className="list-decimal list-outside pl-5 space-y-2 text-sm">
+            <li>Make sure you have the latest version of <code>ScriptHookRDR2</code> with .asi loader</li>
             <li>Download the ZIP File</li>
             <li>Extract the ZIP File</li>
             <li>
